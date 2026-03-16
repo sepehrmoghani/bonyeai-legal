@@ -114,20 +114,20 @@
   <main class="container">
     <header>
       <h1>Privacy Policy</h1>
-      <p class="updated">Last updated: January 30, 2026</p>
+      <p class="updated">Last updated: March 16, 2026</p>
       <nav>
         <a href="./index.html">Home</a>
         <span aria-hidden="true"> · </span>
         <a href="./privacy-choices.html">User Privacy Choices</a>
         <span aria-hidden="true"> · </span>
-        <a href="./terms.html">Terms &amp; Conditions</a>
+        <a href="./terms.html">Terms of Use</a>
       </nav>
     </header>
 
     <section id="overview">
       <h2>1. Overview</h2>
       <p>
-        This Privacy Policy explains how BonyéAI collects, uses, and shares information when you use our app.
+        This Privacy Policy explains how Bonyé collects, uses, and shares information when you use our app.
       </p>
     </section>
 
@@ -138,6 +138,17 @@
         nutrition logs, weight entries, and settings like goals and units.
         If you enable Apple Health, we read Active Energy Burned data.
         We also collect app diagnostics and usage data to keep the service reliable.
+      </p>
+    </section>
+
+    <section id="photos-face-data-and-biometrics">
+      <h2>2A. Photos, Face Data, and Biometrics</h2>
+      <p>
+        Bonyé does not use face recognition, face geometry, or biometric identification. We do not collect, derive,
+        or store face templates or any biometric identifiers from a person&apos;s face. Users may optionally upload meal
+        photos or a profile photo, and those images may incidentally contain a face if the user includes one. When
+        that happens, the image is handled only as a user-submitted photo for meal logging, sync, or profile display,
+        not as face data.
       </p>
     </section>
 
@@ -152,16 +163,39 @@
     <section id="ai-processing">
       <h2>4. AI Processing</h2>
       <p>
-        Meal photos and text descriptions are processed by an AI service to generate nutrition estimates.
-        Do not submit sensitive information you do not want processed for this purpose.
+        Meal photos and text descriptions are processed by Google Gemini through our Supabase server-side proxy to
+        generate nutrition estimates. Depending on the feature used, the request may include a meal photo, a
+        user-entered meal description, and optional health-condition context selected by the user so the app can
+        tailor nutrition feedback. Do not submit sensitive information you do not want processed for this purpose.
+      </p>
+    </section>
+
+    <section id="no-face-recognition-use">
+      <h2>4A. No Face Recognition Use</h2>
+      <p>
+        If a submitted photo incidentally includes a person&apos;s face, Bonyé does not use that image for identity
+        matching, face recognition, advertising, profiling, or any biometric purpose. The app only uses submitted
+        photos to support meal logging, nutrition estimation, account sync, and optional profile photo display.
       </p>
     </section>
 
     <section id="sharing">
       <h2>5. Sharing</h2>
       <p>
-        We share data with service providers that help us operate BonyéAI, such as cloud hosting, analytics,
-        and AI processing. We do not sell your personal data.
+        We share data with service providers that help us operate Bonyé, such as cloud hosting, analytics, and AI
+        processing. For AI meal analysis, relevant meal photos, meal descriptions, and optional nutrition-related
+        health-condition context are sent to Google Gemini through our Supabase server-side proxy. We do not sell
+        your personal data.
+      </p>
+    </section>
+
+    <section id="photo-storage-and-disclosure">
+      <h2>5A. Photo Storage and Disclosure</h2>
+      <p>
+        User-submitted photos, including any photo that incidentally contains a face, are stored in our cloud
+        infrastructure to provide syncing and account features. Meal photos may also be processed by our AI service
+        provider through our server-side proxy to generate nutrition estimates. We do not sell face data or share it
+        with third parties for facial identification.
       </p>
     </section>
 
@@ -170,6 +204,16 @@
       <p>
         You can delete your account within the app, which deletes your stored data from our systems.
         Limited backups may persist temporarily for operational reasons.
+      </p>
+    </section>
+
+    <section id="retention-of-photos-that-may-include-faces">
+      <h2>6A. Retention of Photos That May Include Faces</h2>
+      <p>
+        If a user-submitted meal photo or profile photo incidentally contains a face, that image is retained only for
+        as long as the related content remains in the account, unless deletion is requested earlier. Removing the photo
+        or deleting the account removes it from active systems, with limited temporary backup retention for operational
+        recovery.
       </p>
     </section>
 
@@ -191,7 +235,7 @@
     <section id="children">
       <h2>9. Children</h2>
       <p>
-        BonyéAI is not intended for children under 13. If you believe a child has provided personal data,
+        Bonyé is not intended for children under 13. If you believe a child has provided personal data,
         contact us to remove it.
       </p>
     </section>
