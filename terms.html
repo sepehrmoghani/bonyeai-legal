@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,7 +11,7 @@
       --text: #1f2937;
       --muted: #6b7280;
       --border: #e5e7eb;
-      --link: #f59e0b;
+      --link: #ff4b33;
       --bg: #ffffff;
       --card: #fafafa;
     }
@@ -75,7 +76,8 @@
       font-size: 1.2rem;
     }
 
-    p, li {
+    p,
+    li {
       margin: 0.4rem 0;
     }
 
@@ -110,11 +112,12 @@
     }
   </style>
 </head>
+
 <body>
   <main class="container">
     <header>
       <h1>Terms of Use</h1>
-      <p class="updated">Last updated: March 16, 2026</p>
+      <p class="updated">Last updated: April 7, 2026</p>
       <nav>
         <a href="./index.html">Home</a>
         <span aria-hidden="true"> · </span>
@@ -141,8 +144,17 @@
       </p>
     </section>
 
+    <section id="ai-and-wellness-features">
+      <h2>3. AI and Wellness Features</h2>
+      <p>
+        Meal logging, nutrition estimates, food scoring, and health-condition feedback are for general wellness and
+        informational purposes only. They are not medical advice, diagnosis, or treatment. Check with a doctor before
+        making medical decisions.
+      </p>
+    </section>
+
     <section id="subscriptions">
-      <h2>3. Subscriptions</h2>
+      <h2>4. Subscriptions</h2>
       <p>
         Subscriptions are billed through your Apple ID account and renew automatically unless cancelled at least
         24 hours before the end of the current period.
@@ -150,15 +162,18 @@
     </section>
 
     <section id="managing-your-subscription">
-      <h2>4. Managing Your Subscription</h2>
+      <h2>5. Managing Your Subscription</h2>
       <p>
         You can manage or cancel your subscription from your Apple account settings after purchase. Any unused portion
         of a free trial is forfeited when you purchase a subscription.
       </p>
     </section>
 
-    <section id="app-specific-support">
-      <h2>5. App-Specific Support</h2>
+    <section id="privacy-and-support">
+      <h2>6. Privacy and Support</h2>
+      <p>
+        Meal photos and descriptions may be processed through our secure server to provide nutrition estimates.
+      </p>
       <p>
         For Bonyé-specific support questions, contact
         <a href="mailto:support@bonyeai.com">support@bonyeai.com</a>. Privacy details remain available in our
@@ -175,4 +190,5 @@
     document.getElementById("year").textContent = new Date().getFullYear();
   </script>
 </body>
+
 </html>
