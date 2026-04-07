@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,7 +11,7 @@
       --text: #1f2937;
       --muted: #6b7280;
       --border: #e5e7eb;
-      --link: #f59e0b;
+      --link: #ff4b33;
       --bg: #ffffff;
       --card: #fafafa;
     }
@@ -75,7 +76,8 @@
       font-size: 1.2rem;
     }
 
-    p, li {
+    p,
+    li {
       margin: 0.4rem 0;
     }
 
@@ -110,11 +112,12 @@
     }
   </style>
 </head>
+
 <body>
   <main class="container">
     <header>
       <h1>Privacy Policy</h1>
-      <p class="updated">Last updated: March 16, 2026</p>
+      <p class="updated">Last updated: April 7, 2026</p>
       <nav>
         <a href="./index.html">Home</a>
         <span aria-hidden="true"> · </span>
@@ -155,8 +158,10 @@
     <section id="how-we-use-information">
       <h2>3. How We Use Information</h2>
       <p>
-        We use your information to provide meal logging, estimate nutrition, calculate targets, sync data across devices,
-        and support your account. We also use data to improve performance, troubleshoot issues, and provide customer support.
+        We use your information to provide meal logging, estimate nutrition, calculate targets, sync data across
+        devices,
+        and support your account. We also use data to improve performance, troubleshoot issues, and provide customer
+        support.
       </p>
     </section>
 
@@ -164,7 +169,8 @@
       <h2>4. AI Processing</h2>
       <p>
         Meal photos and text descriptions are processed by Google Gemini through our Supabase server-side proxy to
-        generate nutrition estimates. Depending on the feature used, the request may include a meal photo, a
+        generate nutrition estimates. Profile details stay in your account. Depending on the feature used, the request
+        may include a meal photo, a
         user-entered meal description, and optional health-condition context selected by the user so the app can
         tailor nutrition feedback. Do not submit sensitive information you do not want processed for this purpose.
       </p>
@@ -243,7 +249,8 @@
     <section id="changes">
       <h2>10. Changes</h2>
       <p>
-        We may update this policy from time to time. We will update the "Last updated" date and, if changes are material,
+        We may update this policy from time to time. We will update the "Last updated" date and, if changes are
+        material,
         provide notice in the app.
       </p>
     </section>
@@ -266,4 +273,5 @@
     document.getElementById("year").textContent = new Date().getFullYear();
   </script>
 </body>
+
 </html>
