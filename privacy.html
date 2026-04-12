@@ -117,7 +117,7 @@
   <main class="container">
     <header>
       <h1>Privacy Policy</h1>
-      <p class="updated">Last updated: April 7, 2026</p>
+      <p class="updated">Last updated: April 12, 2026</p>
       <nav>
         <a href="./index.html">Home</a>
         <span aria-hidden="true"> · </span>
@@ -137,10 +137,11 @@
     <section id="information-we-collect">
       <h2>2. Information We Collect</h2>
       <p>
-        We collect information you provide (such as email, name, and profile details), meal photos and descriptions,
-        nutrition logs, weight entries, and settings like goals and units.
-        If you enable Apple Health, we read Active Energy Burned data.
-        We also collect app diagnostics and usage data to keep the service reliable.
+        We collect information you provide such as your email address, display name, sign-in method, profile details,
+        wellness preferences, meal photos and descriptions, exercise descriptions, nutrition logs, exercise logs,
+        weight entries, subscription status, and settings like goals and units. If you enable Apple Health, we read
+        Active Energy Burned data and related workout energy information used by the app. We also collect app
+        diagnostics, sync status, and limited usage data to keep the service reliable.
       </p>
     </section>
 
@@ -158,21 +159,22 @@
     <section id="how-we-use-information">
       <h2>3. How We Use Information</h2>
       <p>
-        We use your information to provide meal logging, estimate nutrition, calculate targets, sync data across
-        devices,
-        and support your account. We also use data to improve performance, troubleshoot issues, and provide customer
-        support.
+        We use your information to provide meal logging, exercise logging, estimate nutrition, estimate workout
+        structure, calculate daily targets, add exercise calories to your baseline totals, sync data across devices,
+        manage subscriptions, and support your account. We also use data to improve performance, troubleshoot issues,
+        maintain offline-first syncing, and provide customer support.
       </p>
     </section>
 
     <section id="ai-processing">
       <h2>4. AI Processing</h2>
       <p>
-        Meal photos and text descriptions are processed by Google Gemini through our Supabase server-side proxy to
-        generate nutrition estimates. Profile details stay in your account. Depending on the feature used, the request
-        may include a meal photo, a
-        user-entered meal description, and optional health-condition context selected by the user so the app can
-        tailor nutrition feedback. Do not submit sensitive information you do not want processed for this purpose.
+        Meal photos, meal text descriptions, and exercise text descriptions are processed by Google Gemini through our
+        Supabase server-side proxy to generate nutrition estimates or structured exercise breakdowns. Profile details
+        stay in your account, although some feature requests may use selected profile inputs such as body details,
+        goals, or user-selected wellness context to improve results. Calorie calculations and saved log values may
+        also be derived locally in the app after AI returns structured data. Do not submit sensitive information you
+        do not want processed for this purpose.
       </p>
     </section>
 
@@ -188,10 +190,10 @@
     <section id="sharing">
       <h2>5. Sharing</h2>
       <p>
-        We share data with service providers that help us operate Bonyé, such as cloud hosting, analytics, and AI
-        processing. For AI meal analysis, relevant meal photos, meal descriptions, and optional nutrition-related
-        health-condition context are sent to Google Gemini through our Supabase server-side proxy. We do not sell
-        your personal data.
+        We share data with service providers that help us operate Bonyé, such as cloud hosting, authentication,
+        subscription infrastructure, analytics, and AI processing. For AI analysis features, relevant meal photos,
+        meal descriptions, exercise descriptions, and optional nutrition-related or workout-related context are sent
+        to Google Gemini through our Supabase server-side proxy. We do not sell your personal data.
       </p>
     </section>
 
@@ -208,8 +210,9 @@
     <section id="retention-deletion">
       <h2>6. Retention &amp; Deletion</h2>
       <p>
-        You can delete your account within the app, which deletes your stored data from our systems.
-        Limited backups may persist temporarily for operational reasons.
+        You can delete logs in the app and you can delete your account within the app, which removes stored account
+        data from our active systems. Some locally cached data may remain on your device until the app is removed or
+        local storage is cleared, and limited backups may persist temporarily for operational reasons.
       </p>
     </section>
 
@@ -226,15 +229,19 @@
     <section id="your-choices">
       <h2>7. Your Choices</h2>
       <p>
-        You can control permissions in your device settings, including camera, photo library, and Apple Health access.
-        You can also disable Apple Health in the app at any time.
+        You can control permissions in your device settings, including camera, photo library, notifications, and Apple
+        Health access. You can also disable Apple Health in the app, remove individual meal or exercise logs, edit
+        logged values, and manage your sign-in methods and subscription settings through the app or your Apple account
+        settings where applicable.
       </p>
     </section>
 
     <section id="security">
       <h2>8. Security</h2>
       <p>
-        We use reasonable safeguards designed to protect your information, but no system can be 100% secure.
+        We use reasonable safeguards designed to protect your information, including authenticated access controls,
+        server-side AI proxying, and row-level access rules for synced account data, but no system can be 100%
+        secure.
       </p>
     </section>
 
